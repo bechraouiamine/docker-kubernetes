@@ -1,3 +1,4 @@
+language: generic
 sudo: required
 services: 
   - docker
@@ -13,9 +14,9 @@ deploy:
   region: "us-east-2"
   app: "docker-kubernetes"
   env: "DockerKubernetes-env"
-  bucket_name: "elasticbeanstalk-us-east-2-768671982919"
+  bucket_name: "elasticbeanstalk:us-east-2:768671982919"
   bucket_path: "docker-kubernetes"
   on:
-    branch: master  
+    branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
