@@ -14,7 +14,7 @@ deploy:
   region: "us-east-2"
   app: "docker-kubernetes"
   env: "DockerKubernetes-env"
-  bucket_name: "elasticbeanstalk:us-east-2:768671982919"
+  bucket_name: "elasticbeanstalk-us-east-2-768671982919"
   bucket_path: "docker-kubernetes"
   on:
     branch: master
